@@ -3,48 +3,46 @@
 [ext_resource type="Script" uid="uid://bg56nnpcb8f0l" path="res://scenes/inventory/bag.gd" id="1_u3xkn"]
 [ext_resource type="Script" uid="uid://cjrs54eepu2kj" path="res://scenes/inventory/inventory_data.gd" id="2_76wf2"]
 [ext_resource type="Script" uid="uid://dqhvn3ybg5i46" path="res://scenes/inventory/item_inventory_data.gd" id="3_owb6r"]
-[ext_resource type="Script" uid="uid://iegihncjmxqv" path="res://scenes/itens/item_data.gd" id="4_w5ihd"]
-[ext_resource type="Texture2D" uid="uid://xroglx4wvx2y" path="res://sprites/05_apple_pie.png" id="5_8fv1v"]
-[ext_resource type="Texture2D" uid="uid://cecn60e56fq73" path="res://sprites/07_bread.png" id="6_gpn64"]
-[ext_resource type="Texture2D" uid="uid://sfjp1quhxlxq" path="res://sprites/13_bacon.png" id="7_s8dee"]
-[ext_resource type="Texture2D" uid="uid://ffkg06ujlpwp" path="res://sprites/15_burger.png" id="8_d38db"]
+[ext_resource type="PackedScene" uid="uid://dvcpo755clrrt" path="res://scenes/inventory/slot_details_container.tscn" id="9_8fv1v"]
+[ext_resource type="JSON" path="res://constants/food_items.json" id="9_s8dee"]
+[ext_resource type="Script" uid="uid://dyrm7gjvd7lph" path="res://utils/item_loader.gd" id="10_d38db"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5ihd"]
+bg_color = Color(0.5764706, 0.41568628, 0.18431373, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.41259423, 0.25637215, 0.0632915, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [sub_resource type="Resource" id="Resource_4mvu4"]
 script = ExtResource("2_76wf2")
 metadata/_custom_type_script = "uid://cjrs54eepu2kj"
 
-[sub_resource type="Resource" id="Resource_jr2f4"]
-script = ExtResource("4_w5ihd")
-item_name = "Apple Pie"
-description = "A simples apple pie"
-sprite = ExtResource("5_8fv1v")
-metadata/_custom_type_script = "uid://iegihncjmxqv"
+[sub_resource type="Resource" id="Resource_mrden"]
+script = ExtResource("10_d38db")
+item_list_json = ExtResource("9_s8dee")
+metadata/_custom_type_script = "uid://dyrm7gjvd7lph"
 
-[sub_resource type="Resource" id="Resource_656po"]
-script = ExtResource("4_w5ihd")
-id = 1
-item_name = "Bread"
-description = "A cute bread"
-sprite = ExtResource("6_gpn64")
-metadata/_custom_type_script = "uid://iegihncjmxqv"
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fv1v"]
+bg_color = Color(0.74509805, 0.4509804, 0, 1)
+border_width_right = 4
+border_color = Color(0.4117647, 0.25490198, 0.0627451, 1)
+corner_radius_top_left = 4
+corner_radius_bottom_left = 4
 
-[sub_resource type="Resource" id="Resource_hog1b"]
-script = ExtResource("4_w5ihd")
-id = 3
-item_name = "Bacon"
-description = "A fried bacon"
-sprite = ExtResource("7_s8dee")
-metadata/_custom_type_script = "uid://iegihncjmxqv"
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gpn64"]
+bg_color = Color(0.4117647, 0.25490198, 0.0627451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
-[sub_resource type="Resource" id="Resource_s5q0t"]
-script = ExtResource("4_w5ihd")
-id = 4
-item_name = "Burger"
-description = "A big burger"
-sprite = ExtResource("8_d38db")
-metadata/_custom_type_script = "uid://iegihncjmxqv"
-
-[node name="PanelContainer" type="PanelContainer" unique_id=198117031]
+[node name="bag_container" type="PanelContainer" unique_id=198117031]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -52,43 +50,69 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -75.0
 offset_top = -75.0
-offset_right = 225.0
+offset_right = 325.0
 offset_bottom = 225.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_w5ihd")
 script = ExtResource("1_u3xkn")
 max_slots = 10
 min_slots = 3
 inventory_data = SubResource("Resource_4mvu4")
-items_avaliable = Array[ExtResource("4_w5ihd")]([SubResource("Resource_jr2f4"), SubResource("Resource_656po"), SubResource("Resource_hog1b"), SubResource("Resource_s5q0t")])
+item_loader = SubResource("Resource_mrden")
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=639410697]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1674132339]
 layout_mode = 2
-color = Color(0.57753825, 0.4162076, 0.18573362, 1)
+theme_override_constants/separation = 0
 
-[node name="slots_area" type="PanelContainer" parent="." unique_id=581354684]
+[node name="slots_container" type="PanelContainer" parent="HBoxContainer" unique_id=581354684]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8fv1v")
 
-[node name="ColorRect" type="ColorRect" parent="slots_area" unique_id=1422013212]
-layout_mode = 2
-color = Color(0.74541575, 0.4510749, 1.1551381e-06, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="slots_area" unique_id=78686672]
+[node name="slots_margin" type="MarginContainer" parent="HBoxContainer/slots_container" unique_id=78686672]
 layout_mode = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="slot_grid" type="GridContainer" parent="slots_area/MarginContainer" unique_id=1726735561]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/slots_container/slots_margin" unique_id=871212494]
+layout_mode = 2
+
+[node name="slots_scroll" type="ScrollContainer" parent="HBoxContainer/slots_container/slots_margin/VBoxContainer" unique_id=2006910090]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="slot_grid" type="GridContainer" parent="HBoxContainer/slots_container/slots_margin/VBoxContainer/slots_scroll" unique_id=1726735561]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 2
 columns = 3
+
+[node name="add_slot_button" type="Button" parent="HBoxContainer/slots_container/slots_margin/VBoxContainer" unique_id=1446826574]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_gpn64")
+text = "Aumentar mochila"
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=1687403298]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="slot_details_container" parent="HBoxContainer/MarginContainer" unique_id=1738113313 instance=ExtResource("9_8fv1v")]
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/slots_container/slots_margin/VBoxContainer/add_slot_button" to="." method="_on_add_slot_button_pressed"]

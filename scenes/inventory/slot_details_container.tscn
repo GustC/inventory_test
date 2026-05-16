@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dvcpo755clrrt"]
+
+[ext_resource type="Script" uid="uid://dveh0fwa0uler" path="res://scenes/inventory/slot_details_container.gd" id="1_6orwc"]
+[ext_resource type="FontFile" uid="uid://c3epsusbpatw2" path="res://fonts/PinyonScript-Regular.ttf" id="2_j5dx0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_507mx"]
+bg_color = Color(0.7511838, 0.7283382, 0.6667366, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4661808, 0.46618086, 0.46618056, 1)
+shadow_color = Color(0, 0, 0, 0.34901962)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[node name="slot_details_container" type="Panel" unique_id=1738113313]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_507mx")
+script = ExtResource("1_6orwc")
+metadata/_edit_group_ = true
+
+[node name="detail_margin" type="MarginContainer" parent="." unique_id=472579063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="detail_margin" unique_id=1415308389]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="item_name" type="Label" parent="detail_margin/VBoxContainer" unique_id=2010167125]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j5dx0")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+
+[node name="item_description" type="RichTextLabel" parent="detail_margin/VBoxContainer" unique_id=398811955]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_j5dx0")
+theme_override_font_sizes/normal_font_size = 16
+fit_content = true

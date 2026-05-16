@@ -1,0 +1,344 @@
+[
+  {
+	"id": 4,
+	"item_name": "Bowl",
+	"description": "Tigela simples para servir sopas, saladas ou outros pratos em porções individuais. Peça versátil na mesa e na cozinha.",
+	"sprite": "res://sprites/04_bowl.png"
+  },
+  {
+	"id": 5,
+	"item_name": "Apple Pie",
+	"description": "Torta clássica de maçã com massa folheada ou amanteigada e recheio doce de fruta com especiarias. Sobremesa reconfortante em fatias.",
+	"sprite": "res://sprites/05_apple_pie.png"
+  },
+  {
+	"id": 7,
+	"item_name": "Bread",
+	"description": "Pão feito com farinha, água e fermento, base do café da manhã e acompanhamento de refeições. Crocante por fora e macio por dentro.",
+	"sprite": "res://sprites/07_bread.png"
+  },
+  {
+	"id": 9,
+	"item_name": "Baguette",
+	"description": "Pão francês alongado com casca crocante e miolo aerado. Ideal com manteiga, queijos ou como base de sanduíches.",
+	"sprite": "res://sprites/09_baguette.png"
+  },
+  {
+	"id": 11,
+	"item_name": "Bun",
+	"description": "Pão redondo macio usado em hambúrgueres ou sanduíches. Levemente adocicado e fofo para segurar recheios suculentos.",
+	"sprite": "res://sprites/11_bun.png"
+  },
+  {
+	"id": 13,
+	"item_name": "Bacon",
+	"description": "Tiras de barriga de porco salgadas, defumadas ou assadas até ficarem crocantes. Acompanha ovos, sanduíches e molhos.",
+	"sprite": "res://sprites/13_bacon.png"
+  },
+  {
+	"id": 15,
+	"item_name": "Burger",
+	"description": "Hambúrguer com carne, queijo e acompanhamentos no pão. Prato informal e saboroso, clássico de lanchonetes.",
+	"sprite": "res://sprites/15_burger.png"
+  },
+  {
+	"id": 17,
+	"item_name": "Burger Napkin",
+	"description": "Hambúrguer acompanhado de guardanapo para comer com praticidade. Versão apresentável do lanche favorito.",
+	"sprite": "res://sprites/17_burger_napkin.png"
+  },
+  {
+	"id": 18,
+	"item_name": "Burrito",
+	"description": "Tortilha enrolada com feijão, arroz, carne ou vegetais e temperos. Refeição mexicana compacta e substancial.",
+	"sprite": "res://sprites/18_burrito.png"
+  },
+  {
+	"id": 20,
+	"item_name": "Bagel",
+	"description": "Pão em formato de argola, cozido e depois assado, com casca firme. Combina com cream cheese e salmão defumado.",
+	"sprite": "res://sprites/20_bagel.png"
+  },
+  {
+	"id": 22,
+	"item_name": "Cheesecake",
+	"description": "Sobremesa com base de biscoito e creme de queijo doce e aveludado. Pode levar calda de frutas ou chocolate.",
+	"sprite": "res://sprites/22_cheesecake.png"
+  },
+  {
+	"id": 24,
+	"item_name": "Cheese Puff",
+	"description": "Salgadinho crocante sabor queijo, leve e aerado. Lanche popular em festas e para beliscar entre refeições.",
+	"sprite": "res://sprites/24_cheesepuff.png"
+  },
+  {
+	"id": 25,
+	"item_name": "Cheese Puff Bowl",
+	"description": "Porção generosa de salgadinhos sabor queijo servida em uma tigela. Prática para compartilhar ou saborear sozinho.",
+	"sprite": "res://sprites/25_cheesepuff_bowl.png"
+  },
+  {
+	"id": 26,
+	"item_name": "Chocolate",
+	"description": "Chocolate em barra ou pedaços, doce à base de cacau. Versátil em sobremesas, bolos e lanches rápidos.",
+	"sprite": "res://sprites/26_chocolate.png"
+  },
+  {
+	"id": 28,
+	"item_name": "Cookies",
+	"description": "Biscoitos doces crocantes, muitas vezes com gotas de chocolate ou passas. Acompanham chá, leite ou café.",
+	"sprite": "res://sprites/28_cookies.png"
+  },
+  {
+	"id": 30,
+	"item_name": "Chocolate Cake",
+	"description": "Bolo de massa fofa com cacau e cobertura de chocolate. Sobremesa festiva e indulgente para ocasiões especiais.",
+	"sprite": "res://sprites/30_chocolatecake.png"
+  },
+  {
+	"id": 32,
+	"item_name": "Curry",
+	"description": "Prato com molho aromático de especiarias, frequentemente com carne ou legumes servidos com arroz. Sabor intenso e aquecedor.",
+	"sprite": "res://sprites/32_curry.png"
+  },
+  {
+	"id": 34,
+	"item_name": "Donut",
+	"description": "Rosquinha frita ou assada, coberta com glacê ou açúcar. Doce clássico de padarias e cafés.",
+	"sprite": "res://sprites/34_donut.png"
+  },
+  {
+	"id": 36,
+	"item_name": "Dumplings",
+	"description": "Pequenos bolinhos recheados cozidos no vapor ou fervidos. Comuns na culinária asiática, com recheios variados.",
+	"sprite": "res://sprites/36_dumplings.png"
+  },
+  {
+	"id": 38,
+	"item_name": "Fried Egg",
+	"description": "Ovo frito com gema mais ou menos firme e clara dourada. Proteína rápida no café da manhã ou sobre arroz e noodles.",
+	"sprite": "res://sprites/38_friedegg.png"
+  },
+  {
+	"id": 40,
+	"item_name": "Egg Salad",
+	"description": "Salada cremosa de ovos picados com maionese e temperos. Recheio fresco para sanduíches ou torradas.",
+	"sprite": "res://sprites/40_eggsalad.png"
+  },
+  {
+	"id": 41,
+	"item_name": "Egg Salad Bowl",
+	"description": "Salada de ovo servida em uma tigela, fácil de misturar e comer. Refeição leve e rica em proteína.",
+	"sprite": "res://sprites/41_eggsalad_bowl.png"
+  },
+  {
+	"id": 42,
+	"item_name": "Egg Tart",
+	"description": "Torta com massa crocante e creme de ovo doce. Sobremesa equilibrada entre o doce e o amanteigado da massa.",
+	"sprite": "res://sprites/42_eggtart.png"
+  },
+  {
+	"id": 44,
+	"item_name": "French Fries",
+	"description": "Batatas cortadas em palitos e fritas até ficarem douradas. Acompanhamento universal com ketchup ou maionese.",
+	"sprite": "res://sprites/44_frenchfries.png"
+  },
+  {
+	"id": 46,
+	"item_name": "Fruit Cake",
+	"description": "Bolo denso com frutas cristalizadas, passas e especiarias. Tradicional em celebrações e clima frio.",
+	"sprite": "res://sprites/46_fruitcake.png"
+  },
+  {
+	"id": 48,
+	"item_name": "Garlic Bread",
+	"description": "Pão tostado com manteiga e alho, muitas vezes gratinado com queijo. Entrada aromática para massas e sopas.",
+	"sprite": "res://sprites/48_garlicbread.png"
+  },
+  {
+	"id": 50,
+	"item_name": "Giant Gummy Bear",
+	"description": "Doce mastigável de gelatina em formato de urso em tamanho grande. Colorido e divertido, especialmente para crianças.",
+	"sprite": "res://sprites/50_giantgummybear.png"
+  },
+  {
+	"id": 52,
+	"item_name": "Gingerbread Man",
+	"description": "Biscoito de gengibre em forma de bonequinho, decorado com glacê. Clássico aromático, muito presente no Natal.",
+	"sprite": "res://sprites/52_gingerbreadman.png"
+  },
+  {
+	"id": 54,
+	"item_name": "Hot Dog",
+	"description": "Salsicha no pão alongado com molhos e condimentos à escolha. Lanche rápido de rua ou de estádio.",
+	"sprite": "res://sprites/54_hotdog.png"
+  },
+  {
+	"id": 55,
+	"item_name": "Hot Dog Sauce",
+	"description": "Molho ou condimento para servir com cachorro-quente, acrescentando acidez, doçura ou picância. Completa o sabor da salsicha.",
+	"sprite": "res://sprites/55_hotdog_sauce.png"
+  },
+  {
+	"id": 57,
+	"item_name": "Ice Cream",
+	"description": "Sobremesa gelada e cremosa feita de leite ou creme com açúcar. Há inúmeras combinações de sabores e coberturas.",
+	"sprite": "res://sprites/57_icecream.png"
+  },
+  {
+	"id": 58,
+	"item_name": "Ice Cream Bowl",
+	"description": "Sorvete servido em tigela, ideal para caldas, frutas e granulados. Porção generosa para saborear com colher.",
+	"sprite": "res://sprites/58_icecream_bowl.png"
+  },
+  {
+	"id": 59,
+	"item_name": "Jelly",
+	"description": "Geléia doce translúcida, firme mas macia, feita de frutas com gelatina. Sobremesa leve ou recheio delicado.",
+	"sprite": "res://sprites/59_jelly.png"
+  },
+  {
+	"id": 61,
+	"item_name": "Jam",
+	"description": "Geleia espessa de frutas e açúcar para passar no pão. Clássica no café da manhã, doce e prática.",
+	"sprite": "res://sprites/61_jam.png"
+  },
+  {
+	"id": 63,
+	"item_name": "Lemon Pie",
+	"description": "Torta com recheio cítrico de limão, muitas vezes coberta com merengue. Contraste agradável entre doce e azedo.",
+	"sprite": "res://sprites/63_lemonpie.png"
+  },
+  {
+	"id": 65,
+	"item_name": "Loaf Bread",
+	"description": "Pão de forma alto para fatiar em camadas regulares. Base para sanduíches, torradas e rabanadas.",
+	"sprite": "res://sprites/65_loafbread.png"
+  },
+  {
+	"id": 67,
+	"item_name": "Mac and Cheese",
+	"description": "Macarrão com molho cremoso de queijo gratinado. Prato americano reconfortante, amado por adultos e crianças.",
+	"sprite": "res://sprites/67_macncheese.png"
+  },
+  {
+	"id": 69,
+	"item_name": "Meatball",
+	"description": "Bolinho de carne moída temperada, cozido no molho ou assado. Acompanha massas, sanduíches ou entradas.",
+	"sprite": "res://sprites/69_meatball.png"
+  },
+  {
+	"id": 71,
+	"item_name": "Nacho",
+	"description": "Tortilhas de milho cobertas com queijo derretido, guacamole, pimentas ou frios. Petisco festivo da culinária mexicana.",
+	"sprite": "res://sprites/71_nacho.png"
+  },
+  {
+	"id": 73,
+	"item_name": "Omlet",
+	"description": "Ovos batidos cozidos em frigideira e dobrados com recheio. Café da manhã rápido, proteico e personalizável.",
+	"sprite": "res://sprites/73_omlet.png"
+  },
+  {
+	"id": 75,
+	"item_name": "Pudding",
+	"description": "Sobremesa cremosa ou levemente firme, de baunilha, chocolate ou caramelo. Toque suave para encerrar a refeição.",
+	"sprite": "res://sprites/75_pudding.png"
+  },
+  {
+	"id": 77,
+	"item_name": "Potato Chips",
+	"description": "Lâminas finas de batata fritas e salgadas. Salgadinho crocante presente em lanches e encontros informais.",
+	"sprite": "res://sprites/77_potatochips.png"
+  },
+  {
+	"id": 78,
+	"item_name": "Potato Chips Bowl",
+	"description": "Batatas chips servidas em uma tigela para dividir na mesa. Conveniente para petiscos em grupo.",
+	"sprite": "res://sprites/78_potatochips_bowl.png"
+  },
+  {
+	"id": 79,
+	"item_name": "Pancakes",
+	"description": "Panquecas empilhadas e macias, com xarope, manteiga ou frutas. Querida no café da manhã e no brunch.",
+	"sprite": "res://sprites/79_pancakes.png"
+  },
+  {
+	"id": 81,
+	"item_name": "Pizza",
+	"description": "Massa redonda coberta com molho, queijo e ingredientes assados no forno. Ícone da culinária italiana no mundo todo.",
+	"sprite": "res://sprites/81_pizza.png"
+  },
+  {
+	"id": 83,
+	"item_name": "Popcorn",
+	"description": "Milho estourado leve e crocante, salgado ou adocicado. Clássico em cinemas, festas e tardes preguiçosas.",
+	"sprite": "res://sprites/83_popcorn.png"
+  },
+  {
+	"id": 84,
+	"item_name": "Popcorn Bowl",
+	"description": "Pipoca servida em tigela grande, perfeita para filmes em casa. Convida a compartilhar e beliscar sem parar.",
+	"sprite": "res://sprites/84_popcorn_bowl.png"
+  },
+  {
+	"id": 85,
+	"item_name": "Roasted Chicken",
+	"description": "Frango assado com pele dourada e carne suculenta. Prato familiar que harmoniza com diversos acompanhamentos.",
+	"sprite": "res://sprites/85_roastedchicken.png"
+  },
+  {
+	"id": 87,
+	"item_name": "Ramen",
+	"description": "Sopa japonesa com caldo aromático, macarrão oriental e coberturas como ovo, cebolinha ou carne. Conforto em uma tigela.",
+	"sprite": "res://sprites/87_ramen.png"
+  },
+  {
+	"id": 88,
+	"item_name": "Salmon",
+	"description": "Peixe salmonídeo de carne rosada, rico em ômega-3, grelhado ou assado. Proteína nobre em refeições leves e elegantes.",
+	"sprite": "res://sprites/88_salmon.png"
+  },
+  {
+	"id": 90,
+	"item_name": "Strawberry Cake",
+	"description": "Bolo com chantilly ou glacê e morangos frescos ou geleia. Sobremesa festiva com perfume frutado marcante.",
+	"sprite": "res://sprites/90_strawberrycake.png"
+  },
+  {
+	"id": 92,
+	"item_name": "Sandwich",
+	"description": "Duas fatias de pão com recheio de frios, saladas, queijos ou pastas. Lanche portátil e infinitamente variável.",
+	"sprite": "res://sprites/92_sandwich.png"
+  },
+  {
+	"id": 94,
+	"item_name": "Spaghetti",
+	"description": "Massa longa servida com molho de tomate, bolonhesa ou simplesmente alho e azeite. Prato italiano rotineiro e reconfortante.",
+	"sprite": "res://sprites/94_spaghetti.png"
+  },
+  {
+	"id": 95,
+	"item_name": "Steak",
+	"description": "Corte de carne bovina grelhada ou selada ao ponto desejado. Proteína central em jantares especiais e churrascos.",
+	"sprite": "res://sprites/95_steak.png"
+  },
+  {
+	"id": 97,
+	"item_name": "Sushi",
+	"description": "Combinações de arroz temperado com peixe cru, vegetais, omelete ou frutos do mar. Expressão refinada da culinária japonesa.",
+	"sprite": "res://sprites/97_sushi.png"
+  },
+  {
+	"id": 99,
+	"item_name": "Taco",
+	"description": "Tortilha dobrada ou enrolada com carne moída, salsa, queijo e guacamole. Petisco mexicano vibrante e prático.",
+	"sprite": "res://sprites/99_taco.png"
+  },
+  {
+	"id": 101,
+	"item_name": "Waffle",
+	"description": "Gofre de massa leve com formato quadriculado característico. Combina com mel, frutas ou chantilly no café da manhã.",
+	"sprite": "res://sprites/101_waffle.png"
+  }
+]

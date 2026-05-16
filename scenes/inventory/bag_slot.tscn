@@ -2,34 +2,34 @@
 
 [ext_resource type="Script" uid="uid://bh4jmj4fv8382" path="res://scenes/inventory/bag_slot.gd" id="1_xjfjn"]
 
-[node name="slot" type="Control" unique_id=1497039751]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyyfy"]
+bg_color = Color(0.4117647, 0.25490198, 0.0627451, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.805021, 0.565619, 0.2960059, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="slot_container" type="PanelContainer" unique_id=677088117]
 custom_minimum_size = Vector2(30, 30)
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -15.0
-offset_top = -15.0
-offset_right = 15.0
-offset_bottom = 15.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 40.0
+offset_bottom = 40.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_hyyfy")
 script = ExtResource("1_xjfjn")
+hover_color = Color(0.88235295, 0.6784314, 0.12941177, 1)
 metadata/_edit_group_ = true
 
-[node name="slot_background" type="ColorRect" parent="." unique_id=1906867088]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.48161346, 0.28435338, 0, 1)
+[node name="item_texture" type="TextureRect" parent="." unique_id=620551704]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+stretch_mode = 5
 
-[node name="item_sprite" type="Sprite2D" parent="." unique_id=745733941]
-position = Vector2(15, 11)
-scale = Vector2(0.96875, 0.90625)
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_hover"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_unhover"]
