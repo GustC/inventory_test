@@ -3,6 +3,9 @@ extends PanelContainer
 @export var item_slot: ItemInventoryData
 @export var hover_color: Color
 @onready var item_texture: TextureRect = $item_texture
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var item_qty_label: Label = $item_qty_label
+
 var _container_resource : Resource
 
 # Called when the node enters the scene tree for the first time.
@@ -16,6 +19,9 @@ func _ready() -> void:
 		item_slot.on_slot_unselected.connect(_on_unselect_slot)
 		item_slot.on_slot_hover.connect(_on_hover_slot)
 		item_slot.on_slot_unhover.connect(_on_unhover_slot)
+		item_slot.qty_updated.connect(_on_qty_updated)
+		if item_slot.item_data:
+			item_qty_label.text = str(item_slot.qty)
 	_update_sprite()
 	pass # Replace with function body.
 
@@ -50,14 +56,23 @@ func _on_unhover_slot(slot_hovered: ItemInventoryData) -> void:
 	_change_to_unselected_mode()
 	pass
 
+func _on_qty_updated(qty: int) -> void:
+	if item_slot.item_data:
+		item_qty_label.text = str(qty)
+	pass
+	
+
 func _change_to_selected_mode() -> void:
 	_container_resource.border_color = hover_color
 	add_theme_stylebox_override("panel", _container_resource)
+	animation_player.play("selected")
 	pass
 
 func _change_to_unselected_mode() -> void:
 	_container_resource.border_color = _default_border_color
 	add_theme_stylebox_override("panel", _container_resource)
+	animation_player.stop()
+	rotation = 0
 	pass
 
 func _on_mouse_hover() -> void:
@@ -73,7 +88,7 @@ func _on_mouse_unhover() -> void:
 
 
 func _on_gui_input(event: InputEvent) -> void:
-	if event.is_pressed():
+	if event.is_action_pressed("mouse_left_click"):
 		if item_slot.selected:
 			item_slot.unselect()
 		else:

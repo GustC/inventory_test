@@ -45,12 +45,18 @@ func try_add_slot() -> void:
 		capacity_maxed_out.emit() # Avisa que chegou ao limite
 # Insere um item no primeiro slot
 func insert_item(item: ItemData) -> void:	
+	var same_item_slot_index = slots.find_custom(func(slot: ItemInventoryData): return slot.item_data and slot.item_data.id == item.id)
+	if same_item_slot_index != -1:
+		slots[same_item_slot_index].add()
+		return
 	var empty_slot_index = slots.find_custom(func(slot: ItemInventoryData): return slot.item_data == null)
 	if empty_slot_index == -1:
 		return
 	var slot_item = slots[empty_slot_index]
 	slot_item.item_data = item
+	slot_item.qty = 1
 	slot_item.item_created.emit(empty_slot_index)
+	slot_item.qty_updated.emit(1)
 	pass
 
 func _on_slot_selected(_selected_slot: ItemInventoryData) -> void:

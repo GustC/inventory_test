@@ -87,6 +87,7 @@ layout_mode = 2
 [node name="slots_scroll" type="ScrollContainer" parent="HBoxContainer/slots_container/slots_margin/VBoxContainer" unique_id=2006910090]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/scrollbar_h_separation = 4
 horizontal_scroll_mode = 0
 
 [node name="slot_grid" type="GridContainer" parent="HBoxContainer/slots_container/slots_margin/VBoxContainer/slots_scroll" unique_id=1726735561]
